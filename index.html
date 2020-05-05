@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cuestionario</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+    <script>
+
+    function score()
+    {
+      var q1 = document.forms.form.q1.value;
+      var q2 = document.forms.form.q2.value;
+      var q3 = document.forms.form.q3.value;
+      var q4 = document.forms.form.q4.value;
+      var q5 = document.forms.form.q5.value;
+      var q6 = document.forms.form.q6.value;
+      var q7 = document.forms.form.q7.value;
+
+      var questions = [q1, q2, q3, q4, q5, q6, q7];
+
+      var answers = ["a", "b", "c", "c", "b", "a", "c"];
+
+      var points = 0;
+      var total = 7;
+
+      for (var i = 0; i < total; i++)
+      {
+        if (questions[i] === answers[i])
+        {
+          points = points + 1;  
+        }
+      
+    }
+
+    var q = document.getElementById("rada");
+  
+      q.style.fontSize = "25px";
+      q.style.textAlign = "center";
+      q.style.color = "white";
+      q.innerHTML = "Obtuviste " + points + " puntos de " + total + " , Tu nota es: " + points +".0";
+    
+      return false;  
+    }
+    
+  </script>
+  
+<body>
+       <form name="form" onsubmit="return score()">
+        <div class="borde">
+        <h4>1- ¿Cúales eran los 2 principales defectos de los primeros sistemas de posicionamiento por satélite? 1 punto</h4>
+        <input type="radio" name="q1" value="a">a. No presentaban cobertura global, al excluir a Rusia y No presentaban visibilidad completa, 24/7<br>
+        <input type="radio" name="q1" value="b">b. No presentaban cobertura global, al excluir a Rusia<br>
+        <input type="radio" name="q1" value="c">c. No presentaban visibilidad completa, 24/7<br> 
+        </div>        
+        <div class="borde">
+        <h4>2- ¿Cúales son las clasificaciones del Posicionamiento por Satélite? 1 punto</h4>
+        <input type="radio" name="q2" value="a">a. Tipo observación, N° receptores, Movimiento receptor, Obtencion resultados<br>
+        <input type="radio" name="q2" value="b">b. Tipo observable, N° receptores, Movimiento receptor, Obtencion resultados, Objetivo<br>
+        <input type="radio" name="q2" value="c">c. N° receptores, Movimiento colector, Obtención resultados, Objetivo<br>
+        </div>
+        <div class="borde">
+        <h4>3. ¿Cúales son las constelaciones GNSS y a qué organismo o gobierno pertenecen? 1 punto</h4>
+        <input type="radio" name="q3" value="a">a. GPS, Glonass, Beidu<br>
+        <input type="radio" name="q3" value="b">b. GPS, Glonas, Galileo<br>
+        <input type="radio" name="q3" value="c">c. GPS, Glonass, Galileo, Beidou<br>
+        </div>
+        <div class="borde">
+        <h4>4. ¿Cúales son los tipos de Órbitas Satelitales? 1 punto</h4>
+        <input type="radio" name="q4" value="a">a. LEO, MEO, GEO, IGSO<br>
+        <input type="radio" name="q4" value="b">b. MEO, GEO, ISO, HEO<br>
+        <input type="radio" name="q4" value="c">c. LEO, MEO, GEO, IGSO, HEO<br> 
+        </div>
+        <div class="borde">
+        <h4>5. ¿Cúales son los segmentos GNSS? 1 punto</h4>
+        <input type="radio" name="q5" value="a">a. Segemento Espacial, Segmento Usuario<br>
+        <input type="radio" name="q5" value="b">b. Segmento Espacial, Segmento de Control, Segmento Usuario<br>
+        <input type="radio" name="q5" value="c">c. Segmento Espacial, Segmento de Control, Segmento Terrestre<br> 
+        </div>
+        <div class="borde">
+        <h4>6. ¿En qué año y bloque GPS se añade la señal L5? 1 punto</h4>
+        <input type="radio" name="q6" value="a">a. Bloque II, año 2010<br>
+        <input type="radio" name="q6" value="b">b. Bloque III, año 2010<br>
+        <input type="radio" name="q6" value="c">c. Bloque II, año 2000<br> 
+        </div>
+        <div class="borde">
+          <h4>7. ¿En qué año y bloque GPS se añade la señal L5? 1 punto</h4>
+          <input type="radio" name="q7" value="a">a. En el año 2022<br>
+          <input type="radio" name="q7" value="b">b. En el año 2021<br>
+          <input type="radio" name="q7" value="c">c. En el año 2020<br> 
+          </div>
+        <br>    
+        <input type="submit" id="sendA" value="Ver Nota">
+        <br>
+        <p id="rada"></p>
+    
+      </form>     
+
+</body>
+       
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
+
+
+
+
