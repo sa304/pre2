@@ -1,10 +1,11 @@
 body{
   background: black;
-  font-family: 'Trebuchet MS';
+  font-family: 'Segoe UI';
+  font-weight: 1px;
 }
 
 h5{
-font-family: 'Segoe UI';
+font-family: 'Trebuchet MS';
 color: red;
 }
 
@@ -27,3 +28,6 @@ width: 150px;
   padding-bottom: 1rem;
   border-radius: 1rem;
 }
+
+
+
