@@ -1,168 +1,183 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Cuestionario</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="style.css">
-  
-  </head>
+<head>
+  <title>Cuestionario</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    
-  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
 <body>
-       <form name="form" onsubmit="return score()">
-        <div class="borde">
-        <h4>1- ¿Cúales eran los principales defectos de los primeros sistemas de posicionamiento por satélite?</h4>
-        <input type="radio" name="q1" value="a">a- No presentaban cobertura global, al excluir a Rusia y No presentaban visibilidad completa, 24/7<br>
-        <input type="radio" name="q1" value="b">b- No presentaban cobertura global, al no considerar a Rusia<br>
-        <input type="radio" name="q1" value="c">c- No presentaban visibilidad completa, 24/7<br> 
-        </div>        
-        <div class="borde">
-        <h4>2- ¿Cúales son las clasificaciones del Posicionamiento por Satélite?</h4>
-        <input type="radio" name="q2" value="a">a- Tipo observación, N° receptores, Movimiento receptor y Obtencion resultados<br>
-        <input type="radio" name="q2" value="b">b- Tipo observable, N° receptores, Movimiento receptor, Obtencion resultados y Objetivo<br>
-        <input type="radio" name="q2" value="c">c- N° receptores, Movimiento colector, Obtención resultados y Objetivo<br>
-        </div>
-        <div class="borde">
-        <h4>3- ¿Cúales son las constelaciones GNSS?</h4>
-        <input type="radio" name="q3" value="a">a- GPS, Glonass y Beidu<br>
-        <input type="radio" name="q3" value="b">b- GPS, Glonas y Galileo<br>
-        <input type="radio" name="q3" value="c">c- GPS, Glonass, Galileo y Beidou<br>
-        </div>
-        <div class="borde">
-        <h4>4- ¿Cúales son los tipos de Órbitas Satelitales?</h4>
-        <input type="radio" name="q4" value="a">a- LEO, MEO, GEO e IGSO<br>
-        <input type="radio" name="q4" value="b">b- MEO, GEO, ISO y HEO<br>
-        <input type="radio" name="q4" value="c">c- LEO, MEO, GEO, IGSO y HEO<br> 
-        </div>
-        <div class="borde">
-        <h4>5- ¿Cúales son los segmentos GNSS?</h4>
-        <input type="radio" name="q5" value="a">a- Segmento Espacial y Segmento Usuario<br>
-        <input type="radio" name="q5" value="b">b- Segmento Espacial, Segmento de Control y Segmento Usuario<br>
-        <input type="radio" name="q5" value="c">c- Segmento Espacial, Segmento de Control y Segmento Terrestre<br> 
-        </div>
-        <div class="borde">
-        <h4>6- ¿En qué año y bloque GPS se añade la señal L5?</h4>
-        <input type="radio" name="q6" value="a">a- Bloque II, año 2010<br>
-        <input type="radio" name="q6" value="b">b- Bloque III, año 2010<br>
-        <input type="radio" name="q6" value="c">c- Bloque II, año 2000<br> 
-        </div>
-        <div class="borde">
-          <h4>7- ¿En qué año se prevee que BEIDOU entrará en FOC?</h4>
-          <input type="radio" name="q7" value="a">a- En el año 2022<br>
-          <input type="radio" name="q7" value="b">b- En el año 2021<br>
-          <input type="radio" name="q7" value="c">c- En el año 2020<br> 
-        </div>
-        <div class="borde">
-          <h4>8- ¿Cúales son las Efemérides?</h4>
-          <input type="radio" name="q8" value="a">a- Efemérides Transmitidas y Efemérides Precisas<br>
-          <input type="radio" name="q8" value="b">b- Almanaque, Efemérides Transmitidas y Efemérides Precisas<br>
-          <input type="radio" name="q8" value="c">c- Almanaque<br> 
-        </div>
-        <div class="borde">
-          <h4>9- ¿Cúales son los elementos básicos de un receptor GNSS genérico?</h4>
-          <input type="radio" name="q9" value="a">a- Antena, Microprocesador, Memoria y Colectora<br>
-          <input type="radio" name="q9" value="b">b- Antena, Microprocesador, Oscilador, Fuente de alimentación, Memoria e Interfaz de usuario<br>
-          <input type="radio" name="q9" value="c">c- Base y Colectora<br> 
-        </div>
-        <div class="borde">
-          <h4>10- ¿Cúal es la diferencia entre Sistema de Referencia y Marco de Referencia?</h4>
-          <input type="radio" name="q10" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q10" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q10" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>11- ¿Qué significa RTK?</h4>
-          <input type="radio" name="q11" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q11" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q11" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>12- ¿Cúales son los principales componentes de una señal GPS?</h4>
-          <input type="radio" name="q12" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q12" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q12" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>13- ¿Cúales son las metodologías de observación con que se calculan las soluciones ITRF y cómo se integran?</h4>
-          <input type="radio" name="q13" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q13" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q13" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>14- ¿Cúales son los bloques de la constelación GPS?</h4>
-          <input type="radio" name="q14" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q14" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q14" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>15- ¿Cúales son las principales fuentes de error GNSS?</h4>
-          <input type="radio" name="q15" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q15" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q15" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>16- ¿En qué fecha y qué organismo cambia de correcciones relativas a correcciones absolutas de antena?</h4>
-          <input type="radio" name="q16" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q16" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q16" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>17- ¿Cúales son los componentes de la órbita GNSS?</h4>
-          <input type="radio" name="q17" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q17" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q17" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>18- ¿Cúales son los tipos de errores atmosféricos que afectan a las observaciones GNSS?</h4>
-          <input type="radio" name="q18" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q18" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q18" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>19- ¿Cúales son los parámetros para la definición de la posición de un satélite orbitando alrededor de la tierra?</h4>
-          <input type="radio" name="q19" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q19" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q19" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>20- ¿Qué aplicaciones puede tener en Geomensura un Navegador tipo GARMIN e indicar si un Receptor Geodésico tendría las mismas aplicaciones?</h4>
-          <input type="radio" name="q20" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
-          <input type="radio" name="q20" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
-          <input type="radio" name="q20" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia<br> 
-        </div>
-        <div class="borde">
-          <h4>21- ¿Porqué influye el empleo de equipos multiconstelación en la calidad y tiempo de observación, en una planificación Geodésica con equipo GPS?</h4>
-          <hr>
-          <input type="radio" name="q21" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<hr>
-          <input type="radio" name="q21" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<hr>
-          <input type="radio" name="q21" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia 
-        </div>
-          
+  <form name="form" onsubmit="return score()">
+    <div class="borde">
+      <h4>1- ¿Cúales eran los principales defectos de los primeros sistemas de posicionamiento por satélite?</h4>
+      <hr>
+      <input type="radio" name="q1" value="a">a- No presentaban cobertura global, al excluir a Rusia y No presentaban
+      visibilidad completa, 24/7<hr>
+      <input type="radio" name="q1" value="b">b- No presentaban cobertura global, al no considerar a Rusia<hr>
+      <input type="radio" name="q1" value="c">c- No presentaban visibilidad completa, 24/7
+    </div>
+    <div class="borde">
+      <h4>2- ¿Cúales son las clasificaciones del Posicionamiento por Satélite?</h4>
+      <hr>
+      <input type="radio" name="q2" value="a">a- Tipo observación, N° receptores, Movimiento receptor y Obtencion
+      resultados<hr>
+      <input type="radio" name="q2" value="b">b- Tipo observable, N° receptores, Movimiento receptor, Obtencion
+      resultados y Objetivo<hr>
+      <input type="radio" name="q2" value="c">c- N° receptores, Movimiento colector, Obtención resultados y Objetivo
+    </div>
+    <div class="borde">
+      <h4>3- ¿Cúales son las constelaciones GNSS?</h4>
+      <hr>
+      <input type="radio" name="q3" value="a">a- GPS, Glonass y Beidu<hr>
+      <input type="radio" name="q3" value="b">b- GPS, Glonas y Galileo<hr>
+      <input type="radio" name="q3" value="c">c- GPS, Glonass, Galileo y Beidou
+    </div>
+    <div class="borde">
+      <h4>4- ¿Cúales son los tipos de Órbitas Satelitales?</h4>
+      <hr>
+      <input type="radio" name="q4" value="a">a- LEO, MEO, GEO e IGSO<hr>
+      <input type="radio" name="q4" value="b">b- MEO, GEO, ISO y HEO<hr>
+      <input type="radio" name="q4" value="c">c- LEO, MEO, GEO, IGSO y HEO
+    </div>
+    <div class="borde">
+      <h4>5- ¿Cúales son los segmentos GNSS?</h4>
+      <input type="radio" name="q5" value="a">a- Segmento Espacial y Segmento Usuario<hr>
+      <input type="radio" name="q5" value="b">b- Segmento Espacial, Segmento de Control y Segmento Usuario<hr>
+      <input type="radio" name="q5" value="c">c- Segmento Espacial, Segmento de Control y Segmento Terrestre
+    </div>
+    <div class="borde">
+      <h4>6- ¿En qué año y bloque GPS se añade la señal L5?</h4>
+      <hr>
+      <input type="radio" name="q6" value="a">a- Bloque II, año 2010<hr>
+      <input type="radio" name="q6" value="b">b- Bloque III, año 2010<hr>
+      <input type="radio" name="q6" value="c">c- Bloque II, año 2000
+    </div>
+    <div class="borde">
+      <h4>7- ¿En qué año se prevee que BEIDOU entrará en FOC?</h4>
+      <hr>
+      <input type="radio" name="q7" value="a">a- En el año 2022<hr>
+      <input type="radio" name="q7" value="b">b- En el año 2021<hr>
+      <input type="radio" name="q7" value="c">c- En el año 2020
+    </div>
+    <div class="borde">
+      <h4>8- ¿Cúales son las Efemérides?</h4>
+      <hr>
+      <input type="radio" name="q8" value="a">a- Efemérides Transmitidas y Efemérides Precisas<hr>
+      <input type="radio" name="q8" value="b">b- Almanaque, Efemérides Transmitidas y Efemérides Precisas<hr>
+      <input type="radio" name="q8" value="c">c- Almanaque
+    </div>
+    <div class="borde">
+      <h4>9- ¿Cúales son los elementos básicos de un receptor GNSS genérico?</h4>
+      <hr>
+      <input type="radio" name="q9" value="a">a- Antena, Microprocesador, Memoria y Colectora<hr>
+      <input type="radio" name="q9" value="b">b- Antena, Microprocesador, Oscilador, Fuente de alimentación, Memoria e
+      Interfaz de usuario<hr>
+      <input type="radio" name="q9" value="c">c- Base y Colectora
+    </div>
+    <div class="borde">
+      <h4>10- ¿Cúal es la diferencia entre Sistema de Referencia y Marco de Referencia?</h4>
+      <hr>
+      <input type="radio" name="q10" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado
+      para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<hr>
+      <input type="radio" name="q10" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y
+      Marco de Referencia: Sistema de Referencia materializado<hr>
+      <input type="radio" name="q10" value="c">c- Sistema de Referencia es sinónimo de Marco de Referencia
+    </div>
+    <div class="borde">
+      <h4>11- ¿Qué significa RTK?</h4>
+      <hr>
+      <input type="radio" name="q11" value="a">a- "Real Time Kinematic": Medidas de fase en relativo, por posicionamiento cinemático, en tiempo real para topografía<hr>
+      <input type="radio" name="q11" value="b">b- "Real Timing Kinematic: Medidas de código en absoluto, por posicionamiento cinemático, en tiempo real para navegación<hr>
+      <input type="radio" name="q11" value="c">c- "Real Time Kinemating": Medidas de fase en relativo en tiempo actual para Geomensura
+    </div>
+    <div class="borde">
+      <h4>12- ¿Cúales son los principales componentes de una señal GPS?</h4>
+      <hr>
+      <input type="radio" name="q12" value="a">a- Colectora y Fase<hr>
+      <input type="radio" name="q12" value="b">b- Portadora, Código y Fase<hr>
+      <input type="radio" name="q12" value="c">c- Portadora, Código y Datos de Navegación
+    </div>
+    <div class="borde">
+      <h4>13- ¿Cúales son las metodologías de observación con que se calculan las soluciones ITRF y cómo se integran?
+      </h4>
+      <hr>
+      <input type="radio" name="q13" value="a">a- GNSS, VLBI y QZSS, son integradas por el ITRF<hr>
+      <input type="radio" name="q13" value="b">b- GPS, VLBI, LLS y DORIS, se integran por protocolo TEI<hr>
+      <input type="radio" name="q13" value="c">c- GNSS, VLBI, LLR, SLR y DORIS, son integradas a través de local TIE
+    </div>
+    <div class="borde">
+      <h4>14- ¿Cúales son los bloques de la constelación GPS?</h4>
+      <hr>
+      <input type="radio" name="q14" value="a">a- Bloques: I, II, IIA, IIR, IIR-F, III y III-F<hr>
+      <input type="radio" name="q14" value="b">b- Bloques: I, II, IIA, IIR, IIR-M, IIF y III<hr>
+      <input type="radio" name="q14" value="c">c- Son constelaciones de la I a la VIII
+    </div>
+    <div class="borde">
+      <h4>15- ¿Cúales son las principales fuentes de error GNSS?</h4>
+      <hr>
+      <input type="radio" name="q15" value="a">a- Satélite, Medio de Propagación de la Señal y Receptor<hr>
+      <input type="radio" name="q15" value="b">b- Satélite, Señal y CORS<hr>
+      <input type="radio" name="q15" value="c">c- Segmento Espacial y Reflexión
+    </div>
+    <div class="borde">
+      <h4>16- ¿En qué fecha y qué organismo cambia de correcciones relativas a correcciones absolutas de antena?</h4>
+      <hr>
+      <input type="radio" name="q16" value="a">a- El 15 de Diciemhre de 2016 el IGS pasa de correcciones relativas a correcciones absolutas del centro de base<hr>
+      <input type="radio" name="q16" value="b">b- El 5 de Noviemhre de 2006 el IGS pasa de correcciones relativas a correcciones absolutas del centro de fase de antena<hr>
+      <input type="radio" name="q16" value="c">c- El 5 de Noviemhre de 2006 SIRGAS pasa de correcciones absolutas a correcciones relativas del centro de control internacional
+    </div>
+    <div class="borde">
+      <h4>17- ¿Cúales son los componentes de la órbita GNSS?</h4>
+      <hr>
+      <input type="radio" name="q17" value="a">a- Anomalias Excéntricas, Pseudodistancias y Semiejes<hr>
+      <input type="radio" name="q17" value="b">b- Semieje mayor, Pseudodistancia, Anomalía Excéntrica, Anomalía Verdadera y Semieje mayor<hr>
+      <input type="radio" name="q17" value="c">c- Orbita, Tierra, Satélite y Perineo
+    </div>
+    <div class="borde">
+      <h4>18- ¿Cúales son los tipos de errores atmosféricos que afectan a las observaciones GNSS?</h4>
+      <hr>
+      <input type="radio" name="q18" value="a">a- Retraso Ionosférico y Retraso Estratosférico<hr>
+      <input type="radio" name="q18" value="b">b- T.E.C.K. y MultyPath<hr>
+      <input type="radio" name="q18" value="c">c- Retardo Ionosférico y Retardo Troposférico
+    </div>
+    <div class="borde">
+      <h4>19- ¿Porqué influye el empleo de equipos multiconstelación en la calidad y tiempo de observación, en una
+        planificación Geodésica con equipo GPS?</h4>
+      <hr>
+      <input type="radio" name="q19" value="a">a- Al agregar otra constelación al ejecutar un planificación y observar los gráficos GDOP y números de satélites, es posible concluir el mejor momneto para realizar la observación
+      <hr>
+      <input type="radio" name="q19" value="b">b- Influyen en la calidad de los datos y tiempos de observación; los valores de los gráficos GDOP mejoran y aumentan positivamente
+      <hr>
+      <input type="radio" name="q19" value="c">c- a y b
+    </div>
 
-        </div>
-        <br>      
-        <input type="submit" id="sendA" value="Ver Puntaje">
-        <br>
-        <p id="rada"></p>
-    
-      </form>     
+
+    </div>
+    <br>
+    <input type="submit" id="sendA" value="Ver Puntaje">
+      <p id="rada"></p>
+
+  </form>
 
 </body>
 
 
-  <script src="script.js"></script>
-       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
-
-
-
-
