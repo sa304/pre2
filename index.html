@@ -22,13 +22,15 @@
       var q6 = document.forms.form.q6.value;
       var q7 = document.forms.form.q7.value;
       var q8 = document.forms.form.q8.value;
+      var q9 = document.forms.form.q9.value;
+      var q10 = document.forms.form.q10.value;
 
-      var questions = [q1, q2, q3, q4, q5, q6, q7, q8];
+      var questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
 
-      var answers = ["a", "b", "c", "c", "b", "a", "c", "b"];
+      var answers = ["a", "b", "c", "c", "b", "a", "c", "b", "b", "a"];
 
       var points = 0;
-      var total = 8;
+      var total = 10;
 
       for (var i = 0; i < total; i++)
       {
@@ -94,13 +96,25 @@
           <input type="radio" name="q7" value="a">a- En el año 2022<br>
           <input type="radio" name="q7" value="b">b- En el año 2021<br>
           <input type="radio" name="q7" value="c">c- En el año 2020<br> 
-          </div>
+        </div>
         <div class="borde">
           <h4>8- ¿Cúales son las Efemérides?</h4>
           <input type="radio" name="q8" value="a">a- Efemérides Transmitidas y Efemérides Precisas<br>
-          <input type="radio" name="q8" value="b">b-  Almanaque, Efemérides Transmitidas y Efemérides Precisas<br>
+          <input type="radio" name="q8" value="b">b- Almanaque, Efemérides Transmitidas y Efemérides Precisas<br>
           <input type="radio" name="q8" value="c">c- Almanaque<br> 
-          </div>
+        </div>
+        <div class="borde">
+          <h4>9- ¿Cúales son los elementos básicos de un receptor GNSS genérico?</h4>
+          <input type="radio" name="q9" value="a">a- Antena, Microprocesador, Memoria y Colectora<br>
+          <input type="radio" name="q9" value="b">b- Antena, Microprocesador, Oscilador, Fuente de alimentación, Memoria e Interfaz de usuario<br>
+          <input type="radio" name="q9" value="c">c- Antena, Procesador, Oscilador, Memoria e Interfaz de Usuario<br> 
+        </div>
+        <div class="borde">
+          <h4>10- ¿Cúal es la diferencia entre Sistema de Referencia y Marco de Referencia?</h4>
+          <input type="radio" name="q10" value="a">a- Sistema de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto y Marco de Referencia: Materialización del sistema de referencia<br>
+          <input type="radio" name="q10" value="b">b- Sistema de Referencia: Sistema coordenado para definir un punto y Marco de Referencia: Sistema de Referencia materializado<br>
+          <input type="radio" name="q10" value="c">c- Sistema de Referencia: Materialización del sistema de referencia y Marco de Referencia: Parámetros que definen un sistema coordenado para ubicar un punto<br> 
+        </div>
         <br>      
         <input type="submit" id="sendA" value="Ver Puntaje">
         <br>
