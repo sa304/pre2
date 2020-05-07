@@ -42,7 +42,7 @@ function score() {
   ];
 
   var answers = [
-    "a", //1
+    "c", //1
     "b", //2
     "c", //3
     "c", //4
