@@ -18,6 +18,7 @@ function score() {
   var q17 = document.forms.form.q17.value;
   var q18 = document.forms.form.q18.value;
   var q19 = document.forms.form.q19.value;
+  var q20 = document.forms.form.q20.value;
 
   var questions = [
     q1,
@@ -39,6 +40,7 @@ function score() {
     q17,
     q18,
     q19,
+    q20,
   ];
 
   var answers = [
@@ -61,6 +63,7 @@ function score() {
     "b", //17
     "c", //18
     "c", //19
+    "a", //20
   ];
 
   var points = 0;
