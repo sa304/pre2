@@ -93,7 +93,7 @@ function score() {
     "a", //27
     "c", //28
     "c", //29
-    "d" //30
+    "d", //30
   ];//ultima lleva coma
 
   var points = 0;
