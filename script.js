@@ -60,8 +60,8 @@ function score() {
     q27,
     q28,
     q29,
-    q30,
-  ];//ultima lleva coma
+    q30
+  ];//ultima no lleva coma
 
   var answers = [
     "c", //1
