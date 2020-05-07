@@ -60,8 +60,8 @@ function score() {
     q27,
     q28,
     q29,
-    q30
-  ];
+    q30,
+  ];//ultima lleva coma
 
   var answers = [
     "c", //1
@@ -93,8 +93,8 @@ function score() {
     "a", //27
     "c", //28
     "c", //29
-    "d", //30
-  ];//ultima lleva coma
+    "d" //30
+  ];//ultima no lleva coma
 
   var points = 0;
   var total = 30;
