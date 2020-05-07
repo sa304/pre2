@@ -67,7 +67,7 @@ function score() {
   ];
 
   var points = 0;
-  var total = 19;
+  var total = 20;
 
   for (var i = 0; i < total; i++) {
     if (questions[i] === answers[i]) {
