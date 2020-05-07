@@ -48,7 +48,7 @@ function score() {
     q21,
     q22,
     q23,
-    q24
+    q24,
   ];
 
   var answers = [
