@@ -23,6 +23,8 @@ function score() {
   var q22 = document.forms.form.q22.value;
   var q23 = document.forms.form.q23.value;
   var q24 = document.forms.form.q24.value;
+  var q25 = document.forms.form.q25.value;
+  var q26 = document.forms.form.q26.value;
 
   var questions = [
     q1,
@@ -49,6 +51,8 @@ function score() {
     q22,
     q23,
     q24,
+    q25,
+    q26
   ];
 
   var answers = [
@@ -75,12 +79,13 @@ function score() {
     "b", //21
     "c", //22
     "c", //23
-    "b" //24
-
+    "b", //24
+    "c", //25
+    "d" //26
   ];
 
   var points = 0;
-  var total = 24;
+  var total = 26;
 
   for (var i = 0; i < total; i++) {
     if (questions[i] === answers[i]) {
